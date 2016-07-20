@@ -1,0 +1,8 @@
+ideas for placeb.io
+	add a time function and volume controls
+
+	streach goals:
+		Add optional background tracks such as rain or kittens :)
+			Have the view background change to reflect the background track
+				For rain, I could use a paralax raidrop sort o background
+				For kittens, animated paralaxed pawPrints?

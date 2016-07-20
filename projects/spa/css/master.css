@@ -1,4 +1,7 @@
 @import url(reset.css);
+.hidden {
+  display: none; }
+
 html {
   box-sizing: border-box; }
   html header {
@@ -31,11 +34,89 @@ html {
         line-height: 5vh;
         text-align: center; }
   html #view {
-    height: 60vh; }
+    height: 55vh; }
+    html #view .title {
+      height: 27vh;
+      padding-top: 3vh; }
+      html #view .title h1 {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 30px;
+        width: 50vw;
+        border-bottom: solid black 2px;
+        padding-bottom: 1vh; }
+    html #view .visual {
+      width: 100vw;
+      display: flex; }
+      html #view .visual .bar {
+        width: 5vw;
+        margin: 0 1px;
+        height: 25vh;
+        background-color: red; }
+      html #view .visual .bar1 {
+        height: 1vh; }
+      html #view .visual .bar2 {
+        height: 1vh; }
+      html #view .visual .bar3 {
+        height: 1vh; }
+      html #view .visual .bar4 {
+        height: 1vh; }
+      html #view .visual .bar5 {
+        height: 1vh; }
+      html #view .visual .bar6 {
+        height: 1vh; }
+      html #view .visual .bar7 {
+        height: 1vh; }
+      html #view .visual .bar8 {
+        height: 1vh; }
+      html #view .visual .bar9 {
+        height: 2vh; }
+      html #view .visual .bar10 {
+        height: 3vh; }
+      html #view .visual .bar11 {
+        height: 4vh; }
+      html #view .visual .bar12 {
+        height: 4vh; }
+      html #view .visual .bar13 {
+        height: 7vh; }
+      html #view .visual .bar14 {
+        height: 15vh; }
+      html #view .visual .bar15 {
+        height: 9vh; }
+      html #view .visual .bar16 {
+        height: 6vh; }
+      html #view .visual .bar17 {
+        height: 5vh; }
+      html #view .visual .bar18 {
+        height: 3vh; }
+      html #view .visual .bar19 {
+        height: 2vh; }
+      html #view .visual .bar20 {
+        height: 1vh; }
+  html #slide-ctrl {
+    background-color: #636060;
+    height: 5vh;
+    box-shadow: 10px 10px red;
+    line-height: 5vh; }
+    html #slide-ctrl h1.freqControls {
+      float: right; }
+      html #slide-ctrl h1.freqControls i {
+        margin-left: 2vw;
+        color: white;
+        margin-right: 2vw; }
+    html #slide-ctrl h1.presets {
+      float: left; }
+      html #slide-ctrl h1.presets i {
+        line-height: 5vh;
+        float: left;
+        margin-left: 2vw;
+        color: white;
+        margin-right: 2vw; }
   html footer {
     height: 30vh;
     background: #D8D8D8; }
     html footer #up-down-container {
+      display: none;
       width: 100vw;
       height: 15vh;
       background: #D8D8D8; }
@@ -46,29 +127,10 @@ html {
         background: #4A4A4A;
         float: left;
         border-radius: 3px; }
-        html footer #up-down-container #left i.up {
-          float: right;
-          padding-top: 1vh;
-          padding-right: 1vw;
-          font-size: 2em;
-          color: white; }
-        html footer #up-down-container #left i.down {
-          float: right;
-          bottom: 5vh;
-          position: relative;
-          padding-bottom: 1vh;
-          padding-right: 1vw;
-          font-size: 2em;
-          color: white; }
         html footer #up-down-container #left i:hover {
           text-shadow: -1px 1px 1px black; }
-        html footer #up-down-container #left h1 {
-          margin: 0;
-          font-size: 15px;
-          line-height: 15vh;
-          color: #F9F9F9; }
-          html footer #up-down-container #left h1 span {
-            float: right; }
+        html footer #up-down-container #left h1 span {
+          float: right; }
       html footer #up-down-container #right {
         margin: 1vh 2.5vw 0 2.5vw;
         width: 40vw;
@@ -77,13 +139,51 @@ html {
         float: right;
         border-radius: 3px; }
         html footer #up-down-container #right h1 {
+          text-align: center;
+          position: relative;
+          top: 2vh;
           margin: 0 1vw;
           font-size: 15px;
-          line-height: 15vh;
           color: #F9F9F9; }
           html footer #up-down-container #right h1 span {
             float: left;
             margin-right: 5vw; }
+        html footer #up-down-container #right i.up {
+          position: relative;
+          top: 1vh;
+          left: 2vw;
+          font-size: 2em;
+          color: white; }
+        html footer #up-down-container #right i.down {
+          position: relative;
+          top: 3vh;
+          left: 2vw;
+          padding-bottom: 1vh;
+          padding-right: 1vw;
+          font-size: 2em;
+          color: white; }
+    html footer #presets {
+      display: flex;
+      height: 15vh; }
+      html footer #presets div {
+        height: 14vh;
+        width: 33%;
+        text-align: center;
+        background: white;
+        margin: 0 1vw;
+        margin-top: 1vh;
+        line-height: 14vh;
+        border-radius: 5px;
+        border: solid white 2px;
+        color: #F9F9F9;
+        text-shadow: -1px -1px 2px black;
+        box-shadow: -1px 2px 5px black; }
+      html footer #presets #sleep {
+        background-color: #453b9c; }
+      html footer #presets #relax {
+        background-color: #d56d00; }
+      html footer #presets #focus {
+        background-color: #0bc94c; }
     html footer section.pause-play {
       width: 50vw;
       margin: 0 auto;

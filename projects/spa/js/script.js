@@ -1,0 +1,10 @@
+$("#freqDownBtn").click(function(){
+	$("#up-down-container").slideDown("slow",function(){
+	});
+	$("#presets").slideUp("fast");
+});
+$("#prestsBtn").click(function(){
+	$("#up-down-container").slideUp("fast",function(){
+	});
+	$("#presets").slideDown("fast");
+});

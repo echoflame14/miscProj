@@ -1,5 +1,6 @@
 @import "_colors.scss";
 @import "reset.css";
+@import "_tools.scss";
 
 
 html{
@@ -40,12 +41,120 @@ html{
 		}
 	}
 	#view{
-		height:60vh;
+		height:55vh;
+		.title{
+			height:27vh;
+			padding-top:3vh;
+			h1{
+				margin:0 auto;
+				text-align:center;
+				font-size:30px;
+				width:50vw;
+				border-bottom:solid black 2px;
+				padding-bottom:1vh;
+			}
+		}
+		.visual{
+			width:100vw;
+			display:flex;
+			.bar{
+				width:5vw;
+				margin:0 1px;
+				height:25vh;
+				background-color:red;
+				
+			}
+			.bar1{
+				height:1vh;
+			}
+			.bar2{
+				height:1vh;
+			}
+			.bar3{
+				height:1vh;
+			}
+			.bar4{
+				height:1vh;
+			}
+			.bar5{
+				height:1vh;
+			}
+			.bar6{
+				height:1vh;
+			}
+			.bar7{
+				height:1vh;
+			}
+			.bar8{
+				height:1vh;
+			}
+			.bar9{
+				height:2vh;
+			}
+			.bar10{
+				height:3vh;
+			}
+			.bar11{
+				height:4vh;
+			}
+			.bar12{
+				height:4vh;
+			}
+			.bar13{
+				height:7vh;
+			}
+			.bar14{
+				height:15vh;
+			}
+			.bar15{
+				height:9vh;
+			}
+			.bar16{
+				height:6vh;
+			}
+			.bar17{
+				height:5vh;
+			}
+			.bar18{
+				height:3vh;
+			}
+			.bar19{
+				height:2vh;
+			}
+			.bar20{
+				height:1vh;
+			}
+		}
+	}
+	#slide-ctrl{
+		background-color:$onyx-light;
+		height:5vh;
+		box-shadow:10px 10px red;
+		line-height:5vh;
+		h1.freqControls{
+			float:right;
+			i{
+				margin-left:2vw;
+				color:white;
+				margin-right:2vw;
+			}
+		}
+		h1.presets{
+			float:left;
+			i{
+				line-height:5vh;
+				float:left;
+				margin-left:2vw;
+				color:white;
+				margin-right:2vw;
+			}
+		}
 	}
 	footer{
 		height:30vh;
 		background:$iron;
 		#up-down-container{
+			display:none;
 			width:100vw;
 			height:15vh;
 			background:$iron;
@@ -57,29 +166,14 @@ html{
 				float:left;
 				border-radius:3px;
 				i.up{
-					float:right;
-					padding-top:1vh;
-					padding-right:1vw;
-					font-size:2em;
-					color:white;
 				}
 				i.down{
-					float:right;
-					bottom:5vh;
-					position:relative;
-					padding-bottom:1vh;
-					padding-right:1vw;
-					font-size:2em;
-					color:white;
+
 				}
 				i:hover{
 					text-shadow:-1px 1px 1px black;
 				}
 				h1{
-					margin:0;
-					font-size:15px;
-					line-height:15vh;
-					color:$white;
 					span{
 						float:right;
 					}
@@ -93,16 +187,62 @@ html{
 				float:right;
 				border-radius:3px;
 				h1{
+					text-align:center;
+					position:relative;
+					top:2vh;
 					margin:0 1vw;
 					font-size:15px;
-					line-height:15vh;
 					color:$white;
 					span{
 						float:left;
 						margin-right:5vw;
 					}
 				}
+				i.up{
+					position:relative;
+					top:1vh;
+					left:2vw;
+					font-size:2em;
+					color:white;
+				}
+				i.down{
+					position:relative;
+					top:3vh;
+					left:2vw;
+					padding-bottom:1vh;
+					padding-right:1vw;
+					font-size:2em;
+					color:white;
+				}
 			}
+		}
+		#presets{
+			display:flex;
+			height:15vh;
+			div{
+				height:14vh;
+				width:33%;
+				text-align:center;
+				background:white;
+				margin:0 1vw;
+				margin-top:1vh;
+				line-height:14vh;
+				border-radius:5px;
+				border:solid white 2px;
+				color:$white;
+				text-shadow:-1px -1px 2px black;
+				box-shadow:-1px 2px 5px black;
+			}
+			#sleep{
+				background-color:$sleep;
+			}
+			#relax{
+				background-color:$relax;
+			}
+			#focus{
+				background-color:$focus;
+			}
+
 		}
 		section.pause-play{
 			width:50vw;
