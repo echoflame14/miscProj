@@ -3,5 +3,143 @@
 
 
 html{
-	
+	box-sizing:border-box;
+	header{
+		height:10vh;
+		background:$iron;
+		#hamburger{
+			height:100%;
+			width:45px;
+			float:right;
+			i{
+				text-align:center;
+				width:45px;
+				height:45px;
+				color:black;
+				font-size:6vh;
+				margin-top:2vh;
+
+			}
+		}
+		#logo{
+			width:8vh;
+			height:8vh;
+			background:$crimson;
+			float:left;
+			margin-left:2%;
+			margin-top:1vh;
+			h1{
+				font-family:arial-black;
+				text-shadow:-2px -3px $onyx;
+				color:white;
+				font-size:8vh;
+				height:8vh;
+				line-height:5vh;
+				text-align:center;
+			}
+		}
+	}
+	#view{
+		height:60vh;
+	}
+	footer{
+		height:30vh;
+		background:$iron;
+		#up-down-container{
+			width:100vw;
+			height:15vh;
+			background:$iron;
+			#left{
+				margin:1vh 2.5vw 0 2.5vw;
+				width:40vw;
+				height:15vh;
+				background:$onyx;
+				float:left;
+				border-radius:3px;
+				i.up{
+					float:right;
+					padding-top:1vh;
+					padding-right:1vw;
+					font-size:2em;
+					color:white;
+				}
+				i.down{
+					float:right;
+					bottom:5vh;
+					position:relative;
+					padding-bottom:1vh;
+					padding-right:1vw;
+					font-size:2em;
+					color:white;
+				}
+				i:hover{
+					text-shadow:-1px 1px 1px black;
+				}
+				h1{
+					margin:0;
+					font-size:15px;
+					line-height:15vh;
+					color:$white;
+					span{
+						float:right;
+					}
+				}
+			}
+			#right{
+				margin:1vh 2.5vw 0 2.5vw;
+				width:40vw;
+				height:100%;
+				background:$onyx;
+				float:right;
+				border-radius:3px;
+				h1{
+					margin:0 1vw;
+					font-size:15px;
+					line-height:15vh;
+					color:$white;
+					span{
+						float:left;
+						margin-right:5vw;
+					}
+				}
+			}
+		}
+		section.pause-play{
+			width:50vw;
+			margin:0 auto;
+			margin-top:2vh;
+			height:5vh;
+			clear:both;
+			text-align:center;
+			background:white;
+			border-radius:5px;
+			border:solid $onyx 1px;
+			border-bottom:none;
+			border-bottom-right-radius:0;
+			border-bottom-left-radius:0;
+			i{
+				margin:0 4vw;
+				font-size:1.5em;
+				line-height: 5vh;
+			}
+		}
+		section.current-hz{
+			width:100vw;
+			height:8vh;
+			text-align:center;
+			margin:0 auto;
+			background:white;
+			h1.border{
+				margin:0 auto;
+				padding-top:1vh;
+				width:50vw;
+				border-bottom:solid $onyx 2px;
+				font-size:15px;
+			}
+			h1.freq{
+				padding-top:1vh;
+				font-size:17px;
+			}
+		}
+	}
 }

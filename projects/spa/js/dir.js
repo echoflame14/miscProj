@@ -1,3 +1,3 @@
-angular.module("app").directive("directive", function(){
+angular.module("app").directive("listFriends", function(){
 
 });

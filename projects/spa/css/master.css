@@ -1,3 +1,120 @@
 @import url(reset.css);
+html {
+  box-sizing: border-box; }
+  html header {
+    height: 10vh;
+    background: #D8D8D8; }
+    html header #hamburger {
+      height: 100%;
+      width: 45px;
+      float: right; }
+      html header #hamburger i {
+        text-align: center;
+        width: 45px;
+        height: 45px;
+        color: black;
+        font-size: 6vh;
+        margin-top: 2vh; }
+    html header #logo {
+      width: 8vh;
+      height: 8vh;
+      background: #970000;
+      float: left;
+      margin-left: 2%;
+      margin-top: 1vh; }
+      html header #logo h1 {
+        font-family: arial-black;
+        text-shadow: -2px -3px #4A4A4A;
+        color: white;
+        font-size: 8vh;
+        height: 8vh;
+        line-height: 5vh;
+        text-align: center; }
+  html #view {
+    height: 60vh; }
+  html footer {
+    height: 30vh;
+    background: #D8D8D8; }
+    html footer #up-down-container {
+      width: 100vw;
+      height: 15vh;
+      background: #D8D8D8; }
+      html footer #up-down-container #left {
+        margin: 1vh 2.5vw 0 2.5vw;
+        width: 40vw;
+        height: 15vh;
+        background: #4A4A4A;
+        float: left;
+        border-radius: 3px; }
+        html footer #up-down-container #left i.up {
+          float: right;
+          padding-top: 1vh;
+          padding-right: 1vw;
+          font-size: 2em;
+          color: white; }
+        html footer #up-down-container #left i.down {
+          float: right;
+          bottom: 5vh;
+          position: relative;
+          padding-bottom: 1vh;
+          padding-right: 1vw;
+          font-size: 2em;
+          color: white; }
+        html footer #up-down-container #left i:hover {
+          text-shadow: -1px 1px 1px black; }
+        html footer #up-down-container #left h1 {
+          margin: 0;
+          font-size: 15px;
+          line-height: 15vh;
+          color: #F9F9F9; }
+          html footer #up-down-container #left h1 span {
+            float: right; }
+      html footer #up-down-container #right {
+        margin: 1vh 2.5vw 0 2.5vw;
+        width: 40vw;
+        height: 100%;
+        background: #4A4A4A;
+        float: right;
+        border-radius: 3px; }
+        html footer #up-down-container #right h1 {
+          margin: 0 1vw;
+          font-size: 15px;
+          line-height: 15vh;
+          color: #F9F9F9; }
+          html footer #up-down-container #right h1 span {
+            float: left;
+            margin-right: 5vw; }
+    html footer section.pause-play {
+      width: 50vw;
+      margin: 0 auto;
+      margin-top: 2vh;
+      height: 5vh;
+      clear: both;
+      text-align: center;
+      background: white;
+      border-radius: 5px;
+      border: solid #4A4A4A 1px;
+      border-bottom: none;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0; }
+      html footer section.pause-play i {
+        margin: 0 4vw;
+        font-size: 1.5em;
+        line-height: 5vh; }
+    html footer section.current-hz {
+      width: 100vw;
+      height: 8vh;
+      text-align: center;
+      margin: 0 auto;
+      background: white; }
+      html footer section.current-hz h1.border {
+        margin: 0 auto;
+        padding-top: 1vh;
+        width: 50vw;
+        border-bottom: solid #4A4A4A 2px;
+        font-size: 15px; }
+      html footer section.current-hz h1.freq {
+        padding-top: 1vh;
+        font-size: 17px; }
 
 /*# sourceMappingURL=master.css.map */
