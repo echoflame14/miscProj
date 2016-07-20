@@ -211,7 +211,7 @@ html{
 				}
 				.flexCol{
 					margin-right:1vw;
-					width:30%;
+					width:40%;
 					height:100%;
 					float:right;
 					display:flex;
@@ -247,7 +247,7 @@ html{
 				}
 				.flexCol{
 					margin-left:1vw;
-					width:30%;
+					width:40%;
 					height:100%;
 					float:left;
 					display:flex;
@@ -258,6 +258,9 @@ html{
 					i{
 						font-size:2em;
 
+					}
+					i:hover{
+						text-shadow:-1px 1px 1px black;
 					}
 				}
 			}

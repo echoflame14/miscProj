@@ -1,5 +1,10 @@
 ideas for placeb.io
 	add a time function and volume controls
+	easy goals:
+		make the arrow change to reflect the state of the slide
+		add the menu popout for the hamburger
+
+
 
 	streach goals:
 		Add optional background tracks such as rain or kittens :)
