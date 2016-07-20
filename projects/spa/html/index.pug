@@ -15,35 +15,13 @@ html(lang='en', ng-app="app")
 				i.fa.fa-bars
 
 		#view
-			.title
-				h1 SLEEP
-			.visual
-				.bar.bar1
-				.bar.bar2
-				.bar3.bar
-				.bar4.bar
-				.bar5.bar
-				.bar6.bar
-				.bar7.bar
-				.bar8.bar
-				.bar9.bar
-				.bar10.bar
-				.bar11.bar
-				.bar12.bar
-				.bar13.bar
-				.bar14.bar
-				.bar15.bar
-				.bar16.bar
-				.bar17.bar
-				.bar18.bar
-				.bar19.bar
-				.bar20.bar
+			ui-view
 
 
 
 
 		#slide-ctrl
-			h1.freqControls Frequency Control
+			h1.freqControls#freqBtn Frequency Control
 				i.fa.fa-chevron-down#freqDownBtn
 			h1.presets Presets
 				i.fa.fa-chevron-down#prestsBtn
@@ -52,23 +30,31 @@ html(lang='en', ng-app="app")
 		footer
 			#presets
 				#sleep
-					h1 SLEEP
+					a(ui-sref="sleep")
+						h1 SLEEP
 				#relax
-					h1 RELAX
+					a(ui-sref="relax")
+						h1 RELAX
 				#focus
-					h1 FOCUS
+					a(ui-sref="focus")
+						h1 FOCUS
 			#up-down-container
 				#left
-					i.fa.fa-chevron-circle-up.up
-					h1 LEFT EAR
+					section
+						h1 LEFT
+					.flexCol
+						i.fa.fa-chevron-circle-up.up
 						span(ng-model="leftHz") 130Hz
-					i.fa.fa-chevron-circle-down.down
+						i.fa.fa-chevron-circle-down.down
 
 				#right
-					i.fa.fa-chevron-circle-up.up
-					h1 RIGHT EAR
+					section
+						h1 RIGHT
+					.flexCol
+						i.fa.fa-chevron-circle-up.up
 						span(ng-model="leftHz") 130hz
-					i.fa.fa-chevron-circle-down.down
+						i.fa.fa-chevron-circle-down.down
+
 
 			section.pause-play
 				i.fa.fa-stop
@@ -99,11 +85,14 @@ html(lang='en', ng-app="app")
 
 		// Angular Cdn
 		script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js")
+		// ui-router
+		script(type="text/javascript", src="../js/ui-router.js")
 		// jquery Cdn
 		script(src="http://code.jquery.com/jquery-3.1.0.min.js")
 		// chart.js
 		script(type="application/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js")
 		// Angular files
+
 		script(type="text/javascript", src="../js/app.js")
 		script(type="text/javascript", src="../js/ctrl.js")
 		script(type="text/javascript", src="../js/srvc.js")

@@ -2,11 +2,16 @@
 .hidden {
   display: none; }
 
+a, a:hover, a:visited {
+  color: white;
+  text-decoration: none; }
+
 html {
   box-sizing: border-box; }
   html header {
     height: 10vh;
-    background: #D8D8D8; }
+    background: #D8D8D8;
+    box-shadow: 0px 0.5vh 1vh #f4f1f1; }
     html header #hamburger {
       height: 100%;
       width: 45px;
@@ -36,68 +41,89 @@ html {
   html #view {
     height: 55vh; }
     html #view .title {
-      height: 27vh;
+      height: 20vh;
       padding-top: 3vh; }
       html #view .title h1 {
+        font-weight: bold;
         margin: 0 auto;
         text-align: center;
         font-size: 30px;
         width: 50vw;
         border-bottom: solid black 2px;
         padding-bottom: 1vh; }
-    html #view .visual {
+    html #view .focus .box {
+      background-color: #0bc94c; }
+    html #view .relax .box {
+      background-color: #d56d00; }
+    html #view .sleep .box {
+      background-color: #453b9c; }
+    html #view #visualBox.focus {
+      box-shadow: 0 1vh 1vh #0bc94c; }
+    html #view #visualBox.relax {
+      box-shadow: 0 1vh 1vh #d56d00; }
+    html #view #visualBox.sleep {
+      box-shadow: 0 1vh 1vh #453b9c; }
+    html #view #visualBox {
       width: 100vw;
-      display: flex; }
-      html #view .visual .bar {
-        width: 5vw;
-        margin: 0 1px;
-        height: 25vh;
-        background-color: red; }
-      html #view .visual .bar1 {
+      height: 29vh;
+      display: flex;
+      align-items: flex-end; }
+      html #view #visualBox .box {
+        box-shadow: 1px -1px 1px  black;
+        border-top-left-radius: 5px;
+        height: 32vh;
+        width: 5%;
+        margin: 0 0.5%; }
+      html #view #visualBox .box1 {
         height: 1vh; }
-      html #view .visual .bar2 {
-        height: 1vh; }
-      html #view .visual .bar3 {
-        height: 1vh; }
-      html #view .visual .bar4 {
-        height: 1vh; }
-      html #view .visual .bar5 {
-        height: 1vh; }
-      html #view .visual .bar6 {
-        height: 1vh; }
-      html #view .visual .bar7 {
-        height: 1vh; }
-      html #view .visual .bar8 {
-        height: 1vh; }
-      html #view .visual .bar9 {
+      html #view #visualBox .box2 {
         height: 2vh; }
-      html #view .visual .bar10 {
+      html #view #visualBox .box3 {
         height: 3vh; }
-      html #view .visual .bar11 {
+      html #view #visualBox .box4 {
         height: 4vh; }
-      html #view .visual .bar12 {
-        height: 4vh; }
-      html #view .visual .bar13 {
-        height: 7vh; }
-      html #view .visual .bar14 {
-        height: 15vh; }
-      html #view .visual .bar15 {
-        height: 9vh; }
-      html #view .visual .bar16 {
+      html #view #visualBox .box5 {
         height: 6vh; }
-      html #view .visual .bar17 {
+      html #view #visualBox .box6 {
+        height: 8vh; }
+      html #view #visualBox .box7 {
+        height: 9vh; }
+      html #view #visualBox .box8 {
+        height: 10vh; }
+      html #view #visualBox .box9 {
+        height: 11vh; }
+      html #view #visualBox .box10 {
+        height: 10vh; }
+      html #view #visualBox .box11 {
+        height: 13vh; }
+      html #view #visualBox .box12 {
+        height: 15vh; }
+      html #view #visualBox .box13 {
+        height: 9vh; }
+      html #view #visualBox .box14 {
+        height: 6vh; }
+      html #view #visualBox .box15 {
         height: 5vh; }
-      html #view .visual .bar18 {
+      html #view #visualBox .box16 {
         height: 3vh; }
-      html #view .visual .bar19 {
+      html #view #visualBox .box17 {
+        height: 3vh; }
+      html #view #visualBox .box18 {
+        height: 1vh; }
+      html #view #visualBox .box19 {
         height: 2vh; }
-      html #view .visual .bar20 {
+      html #view #visualBox .box20 {
         height: 1vh; }
   html #slide-ctrl {
     background-color: #636060;
     height: 5vh;
     box-shadow: 10px 10px red;
-    line-height: 5vh; }
+    line-height: 5vh;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border-top: solid 1px black; }
+    html #slide-ctrl h1 {
+      color: #F9F9F9; }
     html #slide-ctrl h1.freqControls {
       float: right; }
       html #slide-ctrl h1.freqControls i {
@@ -127,10 +153,28 @@ html {
         background: #4A4A4A;
         float: left;
         border-radius: 3px; }
+        html footer #up-down-container #left section {
+          width: 50%;
+          margin-left: 1vw;
+          height: 15vh;
+          line-height: 15vh;
+          float: left;
+          color: #F9F9F9;
+          text-align: center; }
+        html footer #up-down-container #left .flexCol {
+          margin-right: 1vw;
+          width: 30%;
+          height: 100%;
+          float: right;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: center;
+          color: white; }
+          html footer #up-down-container #left .flexCol i {
+            font-size: 2em; }
         html footer #up-down-container #left i:hover {
           text-shadow: -1px 1px 1px black; }
-        html footer #up-down-container #left h1 span {
-          float: right; }
       html footer #up-down-container #right {
         margin: 1vh 2.5vw 0 2.5vw;
         width: 40vw;
@@ -138,30 +182,26 @@ html {
         background: #4A4A4A;
         float: right;
         border-radius: 3px; }
-        html footer #up-down-container #right h1 {
+        html footer #up-down-container #right section {
+          width: 50%;
+          margin-right: 1vw;
+          height: 15vh;
+          line-height: 15vh;
+          float: right;
+          color: #F9F9F9;
+          text-align: center; }
+        html footer #up-down-container #right .flexCol {
+          margin-left: 1vw;
+          width: 30%;
+          height: 100%;
+          float: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
           text-align: center;
-          position: relative;
-          top: 2vh;
-          margin: 0 1vw;
-          font-size: 15px;
-          color: #F9F9F9; }
-          html footer #up-down-container #right h1 span {
-            float: left;
-            margin-right: 5vw; }
-        html footer #up-down-container #right i.up {
-          position: relative;
-          top: 1vh;
-          left: 2vw;
-          font-size: 2em;
           color: white; }
-        html footer #up-down-container #right i.down {
-          position: relative;
-          top: 3vh;
-          left: 2vw;
-          padding-bottom: 1vh;
-          padding-right: 1vw;
-          font-size: 2em;
-          color: white; }
+          html footer #up-down-container #right .flexCol i {
+            font-size: 2em; }
     html footer #presets {
       display: flex;
       height: 15vh; }
