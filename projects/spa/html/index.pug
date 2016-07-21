@@ -57,10 +57,11 @@ html(lang='en', ng-app="app")
 
 
 			section.pause-play
-				i.fa.fa-stop
-				i.fa.fa-play
+				audio(src="../sleep.wav",loop="loop")
+
 			section.current-hz
 				h1.border Current Frequency
+
 				h1.freq {{currentHz}}-Hz
 
 
@@ -97,5 +98,7 @@ html(lang='en', ng-app="app")
 		script(type="text/javascript", src="../js/ctrl.js")
 		script(type="text/javascript", src="../js/srvc.js")
 		script(type="text/javascript", src="../js/dir.js")
+		// audio.js
+		script(type="application/javascript", src="../audiojs/audio.min.js")
 		// Personal etc js
 		script(type="text/javascript", src="../js/script.js")

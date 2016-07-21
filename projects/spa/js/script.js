@@ -8,7 +8,10 @@ $(".presets").click(function(){
 	});
 	$("#presets").slideDown("fast");
 });
-
+//audio.js
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
 // var ctx = $("#visual");
 
 
