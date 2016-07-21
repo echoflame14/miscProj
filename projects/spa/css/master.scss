@@ -306,30 +306,18 @@ html{
 			border-bottom:none;
 			border-bottom-right-radius:0;
 			border-bottom-left-radius:0;
-			#audiojs_wrapper0{
-				background:transparent;
-				display:flex;
-				.play-pause{
-					height:5vh;
-					background:$onyx;
-					width:10%;
-					margin:0;
-					display:flex;
-					justify-content:center;
-					p{
-						text-align:center;
-						padding:0;
-					}
-				}
-				.scrubber{
-					width:80%;
-					border-radius:2px;
-					border-bottom-right-radius:3px;
-				}
-				.time{
-					display:none;
-				}
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			// audiohere
+			h1{
 				width:100%;
+				display:flex;
+				justify-content:space-around;;
+				i{
+					outline:none;
+					cursor:pointer;
+				}
 			}
 		}
 		section.current-hz{

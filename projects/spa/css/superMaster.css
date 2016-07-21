@@ -247,27 +247,17 @@ html {
       border: solid #4A4A4A 1px;
       border-bottom: none;
       border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0; }
-      html footer section.pause-play #audiojs_wrapper0 {
-        background: transparent;
+      border-bottom-left-radius: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      html footer section.pause-play h1 {
+        width: 100%;
         display: flex;
-        width: 100%; }
-        html footer section.pause-play #audiojs_wrapper0 .play-pause {
-          height: 5vh;
-          background: #4A4A4A;
-          width: 10%;
-          margin: 0;
-          display: flex;
-          justify-content: center; }
-          html footer section.pause-play #audiojs_wrapper0 .play-pause p {
-            text-align: center;
-            padding: 0; }
-        html footer section.pause-play #audiojs_wrapper0 .scrubber {
-          width: 80%;
-          border-radius: 2px;
-          border-bottom-right-radius: 3px; }
-        html footer section.pause-play #audiojs_wrapper0 .time {
-          display: none; }
+        justify-content: space-around; }
+        html footer section.pause-play h1 i {
+          outline: none;
+          cursor: pointer; }
     html footer section.current-hz {
       width: 100vw;
       height: 8vh;
