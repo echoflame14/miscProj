@@ -195,4 +195,7 @@ angular.module("app").controller("ctrl",function($scope,srvc){
 		// function stopAnimate(){
 		// 	$(".box").addClass('hidden');
 		// }
+		$scope.optHide = true;
+		$scope.contHide = true;
+		$scope.infoHide = true;
 });

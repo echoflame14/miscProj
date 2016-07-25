@@ -18,12 +18,12 @@ $("#playBtn").click(function(){
 //animation of menu
 $("#hamburger").click(function(){
 	$("#menu").animate({'margin-right':'62vw'},200);
-	$("#menuClose").animate({'margin-right':'68vw'},600);
+	$("#menuClose").animate({'margin-right':'69vw'},450);
 	$("#hamburger").addClass("hidden");
 });
 $("#menuClose").click(function(){
 	console.log("working");
-	$("#menu").animate({'margin-right':'-62vw'},350);
-	$("#menuClose").animate({'margin-right':'-68vw'},350);
+	$("#menuClose").animate({'margin-right':'-68vw'},1);
+	$("#menu").animate({'margin-right':'-62vw'},400);
 	$("#hamburger").removeClass("hidden");
 });

@@ -1,5 +1,12 @@
-nav
-	ul
-		li Options
-		li Contact
-		li Info
+nav(ng-mouseleave="optHide = true", ng-mouseleave="contHide = true", ng-mouseleave="infoHide = true")
+	ul#mainUl
+		li#options.mainLi(ng-mouseenter="optHide = false") Options
+		li#contact.mainLi Contact
+		li#info.mainLi Info
+	.optionDisp(ng-hide="optHide")
+		ul
+			li Rain
+			li White Noise
+			li Pink Noise
+	.contact
+		h1 hey talk to me

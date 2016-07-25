@@ -31,6 +31,60 @@ a, a:hover, a:visited {
   src: url("../fonts/jaapokkienchance-regular.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/jaapokkienchance-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/jaapokkienchance-regular.woff") format("woff"), url("../fonts/jaapokkienchance-regular.ttf") format("truetype"); }
+#menuClose {
+  position: fixed;
+  height: 10vh;
+  font-size: 5vh;
+  top: 2.5vh;
+  width: 5vw;
+  right: -5vw;
+  transition: all .2s ease-in-out;
+  cursor: pointer; }
+
+#menuClose:hover {
+  transform: scale(1.1); }
+
+menu {
+  background-color: #fafafa;
+  border-left: 0.5vw solid rgba(51, 51, 51, 0.9);
+  border-bottom-left-radius: 5px;
+  height: 10vh;
+  margin: 0 0 0 40vw;
+  width: 61vw;
+  position: fixed;
+  top: 0;
+  right: -62vw;
+  z-index: 9;
+  box-shadow: 0 0.5vh 1vh rgba(51, 51, 51, 0.8); }
+  menu nav {
+    width: 100%;
+    height: 100%; }
+    menu nav #mainUl {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      menu nav #mainUl .mainLi {
+        width: 33%;
+        text-align: center; }
+    menu nav .optionDisp {
+      width: 95%;
+      height: 6vh;
+      float: right; }
+      menu nav .optionDisp ul {
+        border-bottom-left-radius: 1vh;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-color: rgba(51, 51, 51, 0.9); }
+        menu nav .optionDisp ul li {
+          width: 33%;
+          text-align: center;
+          font-size: 1.4em;
+          color: #fafafa; }
+
 html {
   box-sizing: border-box;
   font-family: jaapokki-e; }
@@ -41,6 +95,7 @@ html {
     html header #hamburger {
       float: right;
       z-index: 10;
+      cursor: pointer;
       width: 45px;
       height: 100%; }
       html header #hamburger i {
@@ -110,7 +165,7 @@ html {
     border-top: solid 1px black;
     border-top-left-radius: 1vw;
     border-top-right-radius: 1vw;
-    background-color: #333333;
+    background-color: rgba(51, 51, 51, 0.9);
     box-shadow: 10px 10px red;
     line-height: 5vh; }
     html #slide-ctrl h1 {
@@ -403,36 +458,5 @@ html {
   height: 1vh; }
 #view #visualBox.sleep .box:nth-child(20) {
   height: 1vh; }
-
-#menuClose {
-  position: fixed;
-  height: 10vh;
-  font-size: 5vh;
-  top: 2.5vh;
-  width: 5vw;
-  right: -5vw; }
-
-menu {
-  background-color: #fafafa;
-  border-left: 0.5vw solid #333333;
-  height: 10vh;
-  margin: 0 0 0 40vw;
-  width: 61vw;
-  position: fixed;
-  top: 0;
-  right: -62vw;
-  z-index: 9; }
-  menu nav {
-    width: 100%;
-    height: 100%; }
-    menu nav ul {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center; }
-      menu nav ul li {
-        width: 50%;
-        text-align: center; }
 
 /*# sourceMappingURL=master.css.map */

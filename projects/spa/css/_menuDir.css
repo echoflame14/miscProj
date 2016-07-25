@@ -1,0 +1,55 @@
+#menuClose {
+  position: fixed;
+  height: 10vh;
+  font-size: 5vh;
+  top: 2.5vh;
+  width: 5vw;
+  right: -5vw;
+  transition: all .2s ease-in-out;
+  cursor: pointer; }
+
+#menuClose:hover {
+  transform: scale(1.1); }
+
+menu {
+  background-color: #fafafa;
+  border-left: 0.5vw solid rgba(51, 51, 51, 0.9);
+  border-bottom-left-radius: 5px;
+  height: 10vh;
+  margin: 0 0 0 40vw;
+  width: 61vw;
+  position: fixed;
+  top: 0;
+  right: -62vw;
+  z-index: 9;
+  box-shadow: 0 0.5vh 1vh rgba(51, 51, 51, 0.8); }
+  menu nav {
+    width: 100%;
+    height: 100%; }
+    menu nav #mainUl {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      menu nav #mainUl .mainLi {
+        width: 33%;
+        text-align: center; }
+    menu nav .optionDisp {
+      width: 95%;
+      height: 6vh;
+      float: right; }
+      menu nav .optionDisp ul {
+        border-bottom-left-radius: 1vh;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-color: rgba(51, 51, 51, 0.9); }
+        menu nav .optionDisp ul li {
+          width: 33%;
+          text-align: center;
+          font-size: 1.4em;
+          color: #fafafa; }
+
+/*# sourceMappingURL=_menuDir.css.map */

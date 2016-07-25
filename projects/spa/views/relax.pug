@@ -3,25 +3,6 @@
 	section.current-hz
 
 		h1.freq {{currentHz}}-Hz
-#visualBox.relax
 
-		.box.box1.animated.infinite.pulse
-		.box.box2.animated.infinite.pulse
-		.box.box3.animated.infinite.pulse
-		.box.box4.animated.infinite.pulse
-		.box.box5.animated.infinite.pulse
-		.box.box6.animated.infinite.pulse
-		.box.box7.animated.infinite.pulse
-		.box.box8.animated.infinite.pulse
-		.box.box9.animated.infinite.pulse
-		.box.box10.animated.infinite.pulse
-		.box.box11.animated.infinite.pulse
-		.box.box12.animated.infinite.pulse
-		.box.box13.animated.infinite.pulse
-		.box.box14.animated.infinite.pulse
-		.box.box15.animated.infinite.pulse
-		.box.box16.animated.infinite.pulse
-		.box.box17.animated.infinite.pulse
-		.box.box18.animated.infinite.pulse
-		.box.box19.animated.infinite.pulse
-		.box.box20.animated.infinite.pulse
+		#visualBox.relax
+			.box.animated.infinite.pulse(ng-repeat="i in repArr")

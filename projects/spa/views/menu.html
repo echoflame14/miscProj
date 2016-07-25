@@ -1,8 +1,15 @@
 
-<nav>
-  <ul>
-    <li>Options</li>
-    <li>Contact</li>
-    <li>Info</li>
+<nav ng-mouseleave="optHide = true">
+  <ul id="mainUl">
+    <li class="mainLi" id="options" ng-mouseenter="optHide = false">Options</li>
+    <li class="mainLi" id="contact">Contact</li>
+    <li class="mainLi" id="info">Info</li>
   </ul>
+  <div class="optionDisp" ng-hide="optHide">
+    <ul>
+      <li>Rain</li>
+      <li>White Noise</li>
+      <li>Pink Noise</li>
+    </ul>
+  </div>
 </nav>
