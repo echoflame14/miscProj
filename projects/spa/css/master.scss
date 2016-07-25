@@ -1,4 +1,5 @@
 @import "_colors.scss";
+@import "jquery.css";
 @import "reset.css";
 @import "_tools.scss";
 @import "_myReset.scss";
@@ -15,6 +16,7 @@ html{
 		box-shadow:0px 0.5vh 1vh rgb(244, 241, 241);
 		#hamburger{
 			float:right;
+			z-index:10;
 
 			width:45px;
 			height:100%;
@@ -116,66 +118,6 @@ html{
 
 				border-top-left-radius:5px;
 				box-shadow:1px -1px 1px  black;
-			}
-			.box1{
-				height:1vh;
-			}
-			.box2{
-				height:2vh;
-			}
-			.box3{
-				height:3vh;
-			}
-			.box4{
-				height:4vh;
-			}
-			.box5{
-				height:6vh;
-			}
-			.box6{
-				height:8vh;
-			}
-			.box7{
-				height:9vh;
-			}
-			.box8{
-				height:10vh;
-			}
-			.box9{
-				height:11vh;
-			}
-			.box10{
-				height:10vh;
-			}
-			.box11{
-				height:13vh;
-			}
-			.box12{
-				height:15vh;
-			}
-			.box13{
-				height:9vh;
-			}
-			.box14{
-				height:6vh;
-			}
-			.box15{
-				height:5vh;
-			}
-			.box16{
-				height:3vh;
-			}
-			.box17{
-				height:3vh;
-			}
-			.box18{
-				height:1vh;
-			}
-			.box19{
-				height:2vh;
-			}
-			.box20{
-				height:1vh;
 			}
 		}
 	}
@@ -435,3 +377,5 @@ html{
 		}
 	}
 }
+@import "_viewBoxStyles.scss";
+@import "_menuDir.scss";

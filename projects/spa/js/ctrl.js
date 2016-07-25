@@ -1,9 +1,10 @@
 angular.module("app").controller("ctrl",function($scope,srvc){
-
+	$scope.test = "test"
 	$scope.rightHz = 110;
 	$scope.leftHz = 92;
 
 	$scope.repArr = srvc.repArr;
+	$scope.jive = srvc.jive;
 
 
 	$scope.currentHz = $scope.rightHz - $scope.leftHz;
@@ -39,7 +40,6 @@ angular.module("app").controller("ctrl",function($scope,srvc){
 		$scope.rightHz++;
 		if(on === true){
 			start();
-			animate();
 		}
 		$scope.calcDiff();
 	};
@@ -157,6 +157,7 @@ angular.module("app").controller("ctrl",function($scope,srvc){
 			if(on === false){
 				console.log("on is false");
 				start();
+				// animate();
 			}
 			if(on === true){
 				console.log("on is true");
@@ -187,10 +188,11 @@ angular.module("app").controller("ctrl",function($scope,srvc){
 		});
 
 		// animation controller
-		function animate(){
-			$(".box").removeClass('hidden');
-		}
-		function stopAnimate(){
-			$(".box").addClass('hidden');
-		}
+		// function animate(){
+		// 	console.log("removing class");
+		// 	document.getElementsByClassName('box').style.display = "inline";
+		// }
+		// function stopAnimate(){
+		// 	$(".box").addClass('hidden');
+		// }
 });

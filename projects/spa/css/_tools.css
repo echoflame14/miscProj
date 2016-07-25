@@ -3,7 +3,7 @@ Error: Undefined variable: "$focus".
         on line 5 of _tools.scss
 
 1: .hidden{
-2: 	display: none;
+2: 	display:none;
 3: }
 4: .green{
 5: 	color:$focus;
@@ -66,4 +66,4 @@ _tools.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$focus\".\A         on line 5 of _tools.scss\A \A 1: .hidden{\A 2: 	display: none;\A 3: }\A 4: .green{\A 5: 	color:$focus;\A 6: }\A 7: .orange{\A 8: 	color:$relax;\A 9: }\A 10: .blue{"; }
+  content: "Error: Undefined variable: \"$focus\".\A         on line 5 of _tools.scss\A \A 1: .hidden{\A 2: 	display:none;\A 3: }\A 4: .green{\A 5: 	color:$focus;\A 6: }\A 7: .orange{\A 8: 	color:$relax;\A 9: }\A 10: .blue{"; }

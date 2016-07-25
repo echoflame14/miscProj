@@ -1,5 +1,5 @@
-angular.module("app").directive("sleepDir", function(){
+angular.module("app").directive("menu", function(){
 	return{
-		templateUrl: "../views/sleepDir.html"
+		templateUrl: "../views/menu.html"
 	};
 });
