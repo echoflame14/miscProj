@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'jaapokki-r';
+  src: url("../fonts/jaapokki-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/jaapokki-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/jaapokki-regular.woff") format("woff"), url("../fonts/jaapokki-regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'jaapokki-s';
+  src: url("../fonts/jaapokkisubtract-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/jaapokkisubtract-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/jaapokkisubtract-regular.woff") format("woff"), url("../fonts/jaapokkisubtract-regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'jaapokki-e';
+  src: url("../fonts/jaapokkienchance-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/jaapokkienchance-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/jaapokkienchance-regular.woff") format("woff"), url("../fonts/jaapokkienchance-regular.ttf") format("truetype"); }
+
+/*# sourceMappingURL=_fonts.css.map */

@@ -201,6 +201,14 @@ html {
           text-align: center;
           color: white;
           justify-content: space-between; }
+          html footer #up-down-container #left .flexCol input {
+            text-align: center;
+            border-radius: 5px;
+            background-color: transparent;
+            box-shadow: none;
+            border: none;
+            font-size: 1.5em;
+            color: white; }
           html footer #up-down-container #left .flexCol i {
             cursor: pointer;
             font-size: 2em; }
@@ -232,6 +240,14 @@ html {
           text-align: center;
           color: white;
           justify-content: space-between; }
+          html footer #up-down-container #right .flexCol input {
+            text-align: center;
+            border-radius: 5px;
+            background-color: transparent;
+            box-shadow: none;
+            border: none;
+            font-size: 1.5em;
+            color: white; }
           html footer #up-down-container #right .flexCol i {
             cursor: pointer;
             font-size: 2em; }

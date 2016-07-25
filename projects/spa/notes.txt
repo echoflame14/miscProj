@@ -3,6 +3,7 @@ ideas for placeb.io
 	easy goals:
 		make the arrow change to reflect the state of the slide
 		add the menu popout for the hamburger
+		make a While loop for while on === true, to keep the animation going
 
 
 
@@ -11,3 +12,4 @@ ideas for placeb.io
 			Have the view background change to reflect the background track
 				For rain, I could use a paralax raidrop sort o background
 				For kittens, animated paralaxed pawPrints?
+				not the beez nick cage easter egg

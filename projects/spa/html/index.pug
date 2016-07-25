@@ -46,7 +46,8 @@ html(lang='en', ng-app="app")
 						h1 LEFT
 					.flexCol
 						i.fa.fa-chevron-circle-up.up(ng-click="leftUp(leftHz)")
-						span(ng-model="leftHz")#freq1 {{leftHz}}-Hz
+						input(type="text", name="leftHzDisplay", value="leftHz",ng-model="leftHz")#freq1
+
 						i.fa.fa-chevron-circle-down.down(ng-click="leftDown(leftHz)")
 
 				#right
@@ -54,7 +55,7 @@ html(lang='en', ng-app="app")
 						h1 RIGHT
 					.flexCol
 						i.fa.fa-chevron-circle-up.up(ng-click="rightUp(rightHz)")
-						span(ng-model="rightHz")#freq2 {{rightHz}}-Hz
+						input(type="text", name="rightHzDisplay", value="rightHz",ng-model="rightHz")#freq2
 						i.fa.fa-chevron-circle-down.down(ng-click="rightDown(rightHz)")
 
 

@@ -1,9 +1,15 @@
 angular.module("app").controller("ctrl",function($scope,srvc){
-	$scope.test = "working";
-	$scope.leftHz = 100;
-	$scope.rightHz = 105;
+
+	$scope.rightHz = 110;
+	$scope.leftHz = 92;
+
+	$scope.repArr = srvc.repArr;
+
+
 	$scope.currentHz = $scope.rightHz - $scope.leftHz;
+
 	var currHzClass = document.getElementsByClassName('freq');
+
 	$scope.calcDiff = function(){
 		console.log("hey calcDiff just ran");
 		if($scope.rightHz > $scope.leftHz){
@@ -31,42 +37,61 @@ angular.module("app").controller("ctrl",function($scope,srvc){
 	};
 	$scope.rightUp = function(){
 		$scope.rightHz++;
-		start();
+		if(on === true){
+			start();
+			animate();
+		}
 		$scope.calcDiff();
 	};
 	$scope.rightDown = function(){
 		$scope.rightHz--;
-		start();
+		if(on === true){
+			start();
+		}
 		$scope.calcDiff();
 	};
 	$scope.leftUp = function(){
 		$scope.leftHz++;
-		start();
+		if(on === true){
+			start();
+		}
 		$scope.calcDiff();
 	};
 	$scope.leftDown = function(){
 		$scope.leftHz--;
-		start();
+		if(on === true){
+			start();
+		}
 		$scope.calcDiff();
 	};
 	$scope.sleepMode = function(){
 		$scope.rightHz = 100;
 		$scope.leftHz = 97;
 		$scope.calcDiff();
+		if(on === true){
+			start();
+		}
 	};
 	$scope.relaxMode = function(){
-		$scope.rightHz = 103;
-		$scope.leftHz = 96;
+		$scope.rightHz = 150;
+		$scope.leftHz = 143;
 		$scope.calcDiff();
+		if(on === true){
+			start();
+		}
 	};
 	$scope.focusMode = function(){
-		$scope.rightHz = 110;
-		$scope.leftHz = 92;
+		$scope.rightHz = 250;
+		$scope.leftHz = 200;
 		$scope.calcDiff();
+		if(on === true){
+			start();
+		}
 	};
 
 
 	// web audio api
+	var on = false;// to be referencted later, to check wether the tone is playing
 	var contextClass = (window.AudioContext ||
 	        window.webkitAudioContext ||
 	        window.mozAudioContext ||
@@ -107,6 +132,8 @@ angular.module("app").controller("ctrl",function($scope,srvc){
 		rightEar.start ? rightEar.start(0) : rightEar.noteOn(0)
 
 		merger.connect(context.destination);
+		on = true;
+		console.log(on);
 	}
 
 	// start stop ctrls
@@ -121,16 +148,49 @@ angular.module("app").controller("ctrl",function($scope,srvc){
 	      function stop() {
 	        leftEar.disconnect();
 	        rightEar.disconnect();
+			  on = false;
+			  console.log(on);
 	      }
 
 		$("#playBtn").click(function(){
-			start();
+			// start();
+			if(on === false){
+				console.log("on is false");
+				start();
+			}
+			if(on === true){
+				console.log("on is true");
+
+			}
 		});
 
 		$("#pauseBtn").click(function(){
 			stop();
+			if(on === true){
+				console.log("on is true already");
+			}
 		});
 
+		$('#freq1').blur(function(){
+			$scope.calcDiff();
+			// start();
+			if(on === true){
+				start();
+			}
+		});
+		$('#freq2').blur(function(){
+			$scope.calcDiff();
+			if(on === true){
+				start();
 
+			}
+		});
 
+		// animation controller
+		function animate(){
+			$(".box").removeClass('hidden');
+		}
+		function stopAnimate(){
+			$(".box").addClass('hidden');
+		}
 });
