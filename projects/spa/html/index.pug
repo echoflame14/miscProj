@@ -32,8 +32,8 @@ html(lang='en', ng-app="app")
 		footer
 			#presets
 				#sleep(ng-click="sleepMode()")
-					a(ui-sref="sleep")
-						h1 SLEEP
+					a(ui-sref="sleep",ng-click="calcDiff()")
+						h1(ng-click="calcDiff()") SLEEP
 				#relax(ng-click="relaxMode()")
 					a(ui-sref="relax")
 						h1 RELAX
@@ -45,17 +45,17 @@ html(lang='en', ng-app="app")
 					section
 						h1 LEFT
 					.flexCol
-						i.fa.fa-chevron-circle-up.up(ng-click="leftUp()")
-						span(ng-model="leftHz") {{leftHz}}
-						i.fa.fa-chevron-circle-down.down(ng-click="leftDown()")
+						i.fa.fa-chevron-circle-up.up(ng-click="leftUp(leftHz)")
+						span(ng-model="leftHz")#freq1 {{leftHz}}-Hz
+						i.fa.fa-chevron-circle-down.down(ng-click="leftDown(leftHz)")
 
 				#right
 					section
 						h1 RIGHT
 					.flexCol
-						i.fa.fa-chevron-circle-up.up(ng-click="rightUp()")
-						span(ng-model="rightHz") {{rightHz}}-Hz
-						i.fa.fa-chevron-circle-down.down(ng-click="rightDown()")
+						i.fa.fa-chevron-circle-up.up(ng-click="rightUp(rightHz)")
+						span(ng-model="rightHz")#freq2 {{rightHz}}-Hz
+						i.fa.fa-chevron-circle-down.down(ng-click="rightDown(rightHz)")
 
 
 			section.pause-play
