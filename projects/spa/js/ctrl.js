@@ -105,6 +105,7 @@ angular.module("app").controller("ctrl",function($scope,srvc){
 	var turnOn = function(fre1,fre2){
 		console.log("tone is running");
 		merger = context.createChannelMerger(2);// joining the audio channels
+		console.log(context);
 
 		leftEar = context.createOscillator();
 		leftEar.type = 0;
@@ -198,4 +199,6 @@ angular.module("app").controller("ctrl",function($scope,srvc){
 		$scope.optHide = true;
 		$scope.contHide = true;
 		$scope.infoHide = true;
+		$scope.rainHide = true;
+
 });

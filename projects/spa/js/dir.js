@@ -1,5 +1,8 @@
 angular.module("app").directive("menu", function(){
 	return{
-		templateUrl: "../views/menu.html"
+		templateUrl: "../views/menu.html",
+		// link{
+		//
+		// }
 	};
 });

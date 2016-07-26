@@ -65,11 +65,19 @@ menu{
 				align-items:center;
 				background-color:$apple-black-opaq-9;
 				li{
-					width:33%;
+					width:25%;
 					text-align:center;
 					font-size:1.4em;
 					color:$apple-gray;
+					img{
+						height:5vh;
+					}
 				}
+			}
+			audio{
+				width:100%;
+				position:relative;
+				top:1vh;
 			}
 		}
 	}

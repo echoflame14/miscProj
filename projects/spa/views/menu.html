@@ -1,15 +1,1 @@
-
-<nav ng-mouseleave="optHide = true">
-  <ul id="mainUl">
-    <li class="mainLi" id="options" ng-mouseenter="optHide = false">Options</li>
-    <li class="mainLi" id="contact">Contact</li>
-    <li class="mainLi" id="info">Info</li>
-  </ul>
-  <div class="optionDisp" ng-hide="optHide">
-    <ul>
-      <li>Rain</li>
-      <li>White Noise</li>
-      <li>Pink Noise</li>
-    </ul>
-  </div>
-</nav>
+<nav ng-mouseleave="optHide = true;contHide = true; infoHide = true"><ul id="mainUl"><li class="mainLi" id="options" ng-mouseenter="optHide = false; contHide = true; infoHide = true">Options</li><li class="mainLi" id="contact" ng-mouseenter="contHide = false; optHide = true; infoHide = true">Contact</li><li class="mainLi" id="info" ng-mouseenter="infoHide = false; optHide = true; contHide = true">Info</li></ul><div class="optionDisp" ng-hide="optHide"><ul><li ng-click="rainHide = false; pinkHide = true; whiteHide = true">Rain</li><li ng-click="whiteHide = false; pinkHide = true; rainHide = true">White Noise</li><li ng-click="pinkHide = false; whiteHide = true; rainHide = true">Pink Noise</li><li><img src="../nick.png" alt="n-cage"/></li></ul><div class="player" ng-hide="rainHide"><audio src="../rain-03.mp3" loop="true" controls="controls"></audio></div><div class="player" ng-hide="whiteHide"><audio src="../white.mp3" loop="true" controls="controls"></audio></div></div><div class="contact" ng-hide="contHide"><h1>hey talk to me</h1></div><div class="info" ng-hide="infoHide"><h1>INFORMATIVE</h1></div></nav>
