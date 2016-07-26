@@ -8,8 +8,6 @@
 
 html{
 	box-sizing:border-box;
-
-	font-family:jaapokki-e;
 	header{
 		height:10vh;
 
@@ -62,6 +60,7 @@ html{
 		.title{
 			height:20vh;
 			padding-top:3vh;
+			font-family: 'Asap', sans-serif;
 			h1{
 				width:50vw;
 				margin:0 auto;
@@ -137,6 +136,7 @@ html{
 			color:$white;
 		}
 		h1.freqControls{
+			font-family: 'Asap', sans-serif;
 			float:right;
 			i{
 				margin-right:2vw;
@@ -147,6 +147,7 @@ html{
 		}
 		h1.presets{
 			float:left;
+			font-family: 'Asap', sans-serif;
 			i{
 				float:left;
 
@@ -164,6 +165,7 @@ html{
 
 		background:$apple-gray;
 		#up-down-container{
+			font-family: 'Asap', sans-serif;
 			display:none;
 
 			width:100vw;
@@ -287,6 +289,7 @@ html{
 		}
 		#presets{
 			display:flex;
+			font-family: sans-serif;
 
 			height:15vh;
 			div{

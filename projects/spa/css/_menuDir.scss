@@ -15,6 +15,9 @@ $apple-black: #333333;
 	$apple-black-opaq-7: rgba(#333333, 0.7);
 	$apple-black-opaq-6: rgba(#333333, 0.6);
 
+.active{
+	border-bottom:$crimson 0.3vh solid;
+}
 #menuClose{
 	position:fixed;
 	height:10vh;
@@ -40,9 +43,12 @@ menu{
 	box-shadow:0 0.5vh 1vh $apple-black-opaq-8;
 
 	nav{
+		font-family: 'Asap', sans-serif;
 		width:100%;
 		height:100%;
 		#mainUl{
+			font-family: 'Flamenco', cursive;
+			font-size:1em;
 			width:100%;
 			height:100%;
 			display:flex;

@@ -1,3 +1,6 @@
+.active {
+  border-bottom: #970000 0.3vh solid; }
+
 #menuClose {
   position: fixed;
   height: 10vh;
@@ -24,9 +27,12 @@ menu {
   z-index: 9;
   box-shadow: 0 0.5vh 1vh rgba(51, 51, 51, 0.8); }
   menu nav {
+    font-family: 'Asap', sans-serif;
     width: 100%;
     height: 100%; }
     menu nav #mainUl {
+      font-family: 'Flamenco', cursive;
+      font-size: 1em;
       width: 100%;
       height: 100%;
       display: flex;

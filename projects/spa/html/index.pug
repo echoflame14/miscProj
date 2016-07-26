@@ -7,6 +7,7 @@ html(lang='en', ng-app="app")
 		link(rel='stylesheet', href='../css/master.css')
 		link(rel='stylesheet', href='https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css')
 		link(rel='stylesheet', href='../css/animate.css')
+		link(href="https://fonts.googleapis.com/css?family=Asap|Flamenco", rel="stylesheet")
 
 
 	body(ng-controller="ctrl")
@@ -71,7 +72,6 @@ html(lang='en', ng-app="app")
 					i.fa.fa-play#playBtn
 					i.fa.fa-stop#pauseBtn
 					i.fa.fa-volume-up#volumeBtn
-					
 
 
 
@@ -94,12 +94,13 @@ html(lang='en', ng-app="app")
 
 
 
+
+		// jquery Cdn
+		script(src="http://code.jquery.com/jquery-3.1.0.min.js")
 		// Angular Cdn
 		script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js")
 		// ui-router
 		script(type="text/javascript", src="../js/ui-router.js")
-		// jquery Cdn
-		script(src="http://code.jquery.com/jquery-3.1.0.min.js")
 		// chart.js
 		script(type="application/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js")
 		// Angular files

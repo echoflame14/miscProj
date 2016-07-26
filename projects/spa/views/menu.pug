@@ -1,21 +1,22 @@
-nav(ng-mouseleave="optHide = true;contHide = true; infoHide = true")
+nav#mainNav
 	ul#mainUl
-		li#options.mainLi(ng-mouseenter="optHide = false; contHide = true; infoHide = true") Options
-		li#contact.mainLi(ng-mouseenter="contHide = false; optHide = true; infoHide = true") Contact
-		li#info.mainLi(ng-mouseenter="infoHide = false; optHide = true; contHide = true") Info
-	.optionDisp(ng-hide="optHide")
+		li#options.mainLi Options
+		li#contact.mainLi Contact
+		li#info.mainLi Info
+	.optionDisp.hidden
 		ul
-			li(ng-click="rainHide = false; pinkHide = true; whiteHide = true") Rain
-			li(ng-click="whiteHide = false; pinkHide = true; rainHide = true") White Noise
-			li(ng-click="pinkHide = false; whiteHide = true; rainHide = true") Pink Noise
-			li
+			li#rainBtn Rain
+			li#whiteBtn White Noise
+			li#pinkBtn Pink Noise
+			li#nCage
 				img(src="../nick.png", alt="n-cage")
-		.player(ng-hide="rainHide")
-			audio(src="../rain-03.mp3", loop="true" controls)
-		.player(ng-hide="whiteHide")
-			audio(src="../white.mp3", loop = "true" controls)
-
-	.contact(ng-hide="contHide")
+		.player#rain.hidden
+			audio(src="../rain-03.mp3", loop="true" controls).audioPlayers
+		.player#white.hidden
+			audio(src="../white.mp3", loop = "true" controls).audioPlayers
+		.player#pink.hidden
+			audio(src="../pink.mp3", loop = "true" controls).audioPlayers
+	.contact.hidden
 		h1 hey talk to me
-	.info(ng-hide="infoHide")
+	.info.hidden
 		h1 INFORMATIVE

@@ -31,6 +31,9 @@ a, a:hover, a:visited {
   src: url("../fonts/jaapokkienchance-regular.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/jaapokkienchance-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/jaapokkienchance-regular.woff") format("woff"), url("../fonts/jaapokkienchance-regular.ttf") format("truetype"); }
+.active {
+  border-bottom: #970000 0.3vh solid; }
+
 #menuClose {
   position: fixed;
   height: 10vh;
@@ -57,9 +60,12 @@ menu {
   z-index: 9;
   box-shadow: 0 0.5vh 1vh rgba(51, 51, 51, 0.8); }
   menu nav {
+    font-family: 'Asap', sans-serif;
     width: 100%;
     height: 100%; }
     menu nav #mainUl {
+      font-family: 'Flamenco', cursive;
+      font-size: 1em;
       width: 100%;
       height: 100%;
       display: flex;
@@ -92,8 +98,7 @@ menu {
         top: 1vh; }
 
 html {
-  box-sizing: border-box;
-  font-family: jaapokki-e; }
+  box-sizing: border-box; }
   html header {
     height: 10vh;
     background: #fafafa;
@@ -130,7 +135,8 @@ html {
     height: 55.5vh; }
     html #view .title {
       height: 20vh;
-      padding-top: 3vh; }
+      padding-top: 3vh;
+      font-family: 'Asap', sans-serif; }
       html #view .title h1 {
         width: 50vw;
         margin: 0 auto;
@@ -177,13 +183,15 @@ html {
     html #slide-ctrl h1 {
       color: #F9F9F9; }
     html #slide-ctrl h1.freqControls {
+      font-family: 'Asap', sans-serif;
       float: right; }
       html #slide-ctrl h1.freqControls i {
         margin-right: 2vw;
         margin-left: 2vw;
         color: white; }
     html #slide-ctrl h1.presets {
-      float: left; }
+      float: left;
+      font-family: 'Asap', sans-serif; }
       html #slide-ctrl h1.presets i {
         float: left;
         margin-right: 2vw;
@@ -194,6 +202,7 @@ html {
     height: 22vh;
     background: #fafafa; }
     html footer #up-down-container {
+      font-family: 'Asap', sans-serif;
       display: none;
       width: 100vw;
       height: 15vh;
@@ -278,6 +287,7 @@ html {
             text-shadow: -1px 1px 1px black; }
     html footer #presets {
       display: flex;
+      font-family: sans-serif;
       height: 15vh; }
       html footer #presets div {
         width: 33%;
