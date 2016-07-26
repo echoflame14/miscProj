@@ -45,7 +45,14 @@ angular.module("app").directive("menu", function(){
 			$("#pink").slideDown(300);
 		});
 		$("#nCage").click(function(){
-			$(".player > *").pause();
+			var doCage = prompt("Are you ready?","Yes or No");
+			if(doCage === "yes"){
+				console.log("running cageify");
+				
+			}
+			else if(doCage === "no"){
+				console.log("not running cageify");
+			}
 		});
 	}
 	return{
