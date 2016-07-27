@@ -1,24 +1,24 @@
 angular.module("app").directive("menu", function(){
 	function linkFunc(scope, elem, attrs){
 		$("#options").click(function(){
-			$(".optionDisp").slideDown('fast');
-			$(".contact").slideUp('fast');
-			$(".info").slideUp('fast');
+			$(".optionDisp").slideDown(200);
+			$("#contactCont").slideUp(20);
+			$("#infoCont").slideUp(20);
 		});
-		$("#contact").click(function(){
-			$(".contact").slideDown('fast');
-			$(".optionDisp").slideUp('fast');
-			$(".info").slideUp('fast');
+		$("#contact").mouseenter(function(){
+			$("#contactCont").slideDown(200);
+			$(".optionDisp").slideUp(20);
+			$("#infoCont").slideUp(20);
 		});
 		$("#info").click(function(){
-			$(".info").slideDown('fast');
-			$(".optionDisp").slideUp('fast');
-			$(".contact").slideUp('fast');
+			$("#infoCont").slideDown(200);
+			$(".optionDisp").slideUp(20);
+			$("#contactCont").slideUp(20);
 		});
 		$("#mainNav").mouseleave(function(){
 			$(".optionDisp").slideUp('fast');
-			$(".contact").slideUp('fast');
-			$(".info").slideUp('fast');
+			$("#contactCont").slideUp('fast');
+			$("#infoCont").slideUp('fast');
 		});
 		$("#rainBtn").click(function(){
 			$(this).addClass('active');
