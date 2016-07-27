@@ -5,11 +5,9 @@
 @import "_myReset.scss";
 @import "_fonts.scss";
 @import "_menuDir.scss";
-@import "_media.scss";
 
 html{
 	box-sizing:border-box;
-	min-width:264px;
 	header{
 		height:10vh;
 
@@ -98,15 +96,12 @@ html{
 		}
 		#visualBox.focus{
 			box-shadow:0 1vh 1vh $focus;
-			height:37vh;
 		}
 		#visualBox.relax{
 			box-shadow:0 1vh 1vh $relax;
-			height:37vh;
 		}
 		#visualBox.sleep{
 			box-shadow:0 1vh 1vh $sleep;
-			height:37vh;
 		}
 
 		#visualBox{

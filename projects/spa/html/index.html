@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <title>Placeb.io</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap|Flamenco" rel="stylesheet">
+  </head>
+  <body ng-controller="ctrl">
+    <header>
+      <div id="logo">
+        <h1>p</h1>
+      </div>
+      <div id="hamburger"><i class="fa fa-bars"></i></div>
+      <div id="menuClose"><i class="fa fa-chevron-right"></i></div>
+      <menu id="menu"></menu>
+    </header>
+    <div id="view">
+      <ui-view></ui-view>
+    </div>
+    <div id="slide-ctrl">
+      <h1 class="freqControls" id="freqBtn">Frequency Control<i class="fa fa-chevron-down" id="freqDownBtn"></i></h1>
+      <h1 class="presets">Presets<i class="fa fa-chevron-down" id="prestsBtn"></i></h1>
+    </div>
+    <footer>
+      <div id="presets">
+        <div id="sleep" ng-click="sleepMode()"><a ui-sref="sleep" ng-click="calcDiff()">
+            <h1 ng-click="calcDiff()">SLEEP</h1></a></div>
+        <div id="relax" ng-click="relaxMode()"><a ui-sref="relax">
+            <h1>RELAX</h1></a></div>
+        <div id="focus" ng-click="focusMode()"><a ui-sref="focus">
+            <h1>FOCUS</h1></a></div>
+      </div>
+      <div id="up-down-container">
+        <div id="left">
+          <section>
+            <h1>LEFT</h1>
+          </section>
+          <div class="flexCol"><i class="fa fa-chevron-circle-up up" ng-click="leftUp(leftHz)"></i>
+            <input type="text" name="leftHzDisplay" value="leftHz" ng-model="leftHz" id="freq1"><i class="fa fa-chevron-circle-down down" ng-click="leftDown(leftHz)"></i>
+          </div>
+        </div>
+        <div id="right">
+          <section>
+            <h1>RIGHT</h1>
+          </section>
+          <div class="flexCol"><i class="fa fa-chevron-circle-up up" ng-click="rightUp(rightHz)"></i>
+            <input type="text" name="rightHzDisplay" value="rightHz" ng-model="rightHz" id="freq2"><i class="fa fa-chevron-circle-down down" ng-click="rightDown(rightHz)"></i>
+          </div>
+        </div>
+      </div>
+      <section class="pause-play">
+        <h1><i class="fa fa-play" id="playBtn"></i><i class="fa fa-stop" id="pauseBtn"></i><i class="fa fa-volume-up" id="volumeBtn"></i></h1>
+      </section>
+    </footer>
+    <!-- jquery Cdn-->
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- Angular Cdn-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <!-- ui-router-->
+    <script type="text/javascript" src="../js/ui-router.js"></script>
+    <!-- chart.js-->
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
+    <!-- Angular files-->
+    <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/ctrl.js"></script>
+    <script type="text/javascript" src="../js/srvc.js"></script>
+    <script type="text/javascript" src="../js/dir.js"></script>
+    <!-- Personal etc js-->
+    <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>
