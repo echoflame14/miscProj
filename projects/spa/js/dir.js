@@ -5,7 +5,7 @@ angular.module("app").directive("menu", function(){
 			$("#contactCont").slideUp(20);
 			$("#infoCont").slideUp(20);
 		});
-		$("#contact").mouseenter(function(){
+		$("#contact").click(function(){
 			$("#contactCont").slideDown(200);
 			$(".optionDisp").slideUp(20);
 			$("#infoCont").slideUp(20);
