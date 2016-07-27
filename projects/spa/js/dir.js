@@ -45,7 +45,7 @@ angular.module("app").directive("menu", function(){
 			$("#pink").slideDown(300);
 		});
 		$("#nCage").click(function(){
-			$(".player > *").pause();
+			$('body').toggleClass('cageify');
 		});
 	}
 	return{

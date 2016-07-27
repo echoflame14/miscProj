@@ -32,6 +32,10 @@ a, a:hover, a:visited {
   src: url("../fonts/jaapokkienchance-regular.eot");
   /* IE9 Compat Modes */
   src: url("../fonts/jaapokkienchance-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/jaapokkienchance-regular.woff") format("woff"), url("../fonts/jaapokkienchance-regular.ttf") format("truetype"); }
+.cageify {
+  background-image: url("https://cdn3.vox-cdn.com/thumbor/IE_0CtHTpjW1ix_Ztb5VHAdBHOE=/assets.sbnation.com/uploads/chorus_asset/file/2317732/nicolasCage_NotTheBees.0.gif");
+  background-size: contain; }
+
 .active {
   border-bottom: #970000 0.3vh solid; }
 

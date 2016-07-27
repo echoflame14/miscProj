@@ -14,7 +14,10 @@ $apple-black: #333333;
 	$apple-black-opaq-9: rgba(#333333, 0.9);
 	$apple-black-opaq-7: rgba(#333333, 0.7);
 	$apple-black-opaq-6: rgba(#333333, 0.6);
-
+.cageify{
+	background-image: url('https://cdn3.vox-cdn.com/thumbor/IE_0CtHTpjW1ix_Ztb5VHAdBHOE=/assets.sbnation.com/uploads/chorus_asset/file/2317732/nicolasCage_NotTheBees.0.gif');
+	background-size:contain;
+}
 .active{
 	border-bottom:$crimson 0.3vh solid;
 }
