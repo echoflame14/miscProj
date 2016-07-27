@@ -255,9 +255,9 @@ html {
         background: #4A4A4A; }
         html footer #up-down-container #left section {
           float: left;
-          width: 50%;
+          width: 40%;
           height: 15vh;
-          margin-left: 1vw;
+          margin-left: 5%;
           text-align: center;
           color: #F9F9F9;
           line-height: 15vh; }
@@ -267,7 +267,7 @@ html {
           flex-direction: column;
           width: 40%;
           height: 100%;
-          margin-right: 1vw;
+          margin-right: 5%;
           text-align: center;
           color: white;
           justify-content: space-between; }
@@ -294,9 +294,9 @@ html {
         background: #4A4A4A; }
         html footer #up-down-container #right section {
           float: right;
-          width: 50%;
+          width: 40%;
           height: 15vh;
-          margin-right: 1vw;
+          margin-right: 5%;
           text-align: center;
           color: #F9F9F9;
           line-height: 15vh; }
@@ -306,7 +306,7 @@ html {
           flex-direction: column;
           width: 40%;
           height: 100%;
-          margin-left: 1vw;
+          margin-left: 5%;
           text-align: center;
           color: white;
           justify-content: space-between; }
