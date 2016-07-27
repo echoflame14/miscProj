@@ -88,6 +88,29 @@ menu{
 		}
 		.contact{
 			display:flex;
+			flex-direction:column;
+			align-items:center;
+			justify-content:space-around;
+			height:20vh;
+			background-color:$apple-black-opaq-8;
+			border-bottom-left-radius:20px;
+			#name{
+				color:rgb(214, 213, 215);
+				font-weight:bold;
+				font-size:1.3em;
+			}
+			h1{
+				color:rgb(214, 213, 215);
+				a,a:visited,a:hover{
+					color:white;
+					cursor:pointer;
+					padding-left:1vw;
+				}
+				span{
+					padding-left:1vw;
+					color:white;
+				}
+			}
 		}
 		.info{
 			display:flex;
