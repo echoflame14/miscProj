@@ -86,5 +86,22 @@ menu{
 				top:1vh;
 			}
 		}
+		.contact{
+			display:flex;
+		}
+		.info{
+			display:flex;
+			border-bottom-left-radius:20px;
+			width:90%;
+			margin:0 auto;
+			justify-content:space-around;
+			background-color:$apple-black-opaq-8;
+			padding-top:3vh;
+			padding-bottom:3vh;
+			iframe{
+				width:90%;
+				padding:0;
+			}
+		}
 	}
 }
