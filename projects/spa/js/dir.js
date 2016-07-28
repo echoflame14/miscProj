@@ -37,42 +37,43 @@ angular.module("app").directive("menu", function(){
 			$("#infoCont").slideUp('fast');
 		});
 		$("#rainBtn").click(function(){
-			$(this).addClass('active');
-			$("#whiteBtn").removeClass('active');
-			$("#pinkBtn").removeClass('active');
-			$("#white").slideUp(10);
-			$("#pink").slideUp(10);
-			$("#rain").slideDown(200);
+
+			if(rainAudio.paused){
+				rainAudio.play();
+				$(this).addClass('active');
+			}
+			else{
+				rainAudio.pause();
+				$(this).removeClass('active');
+			}
 		});
 		$("#whiteBtn").click(function(){
-			$(this).addClass('active');
-			$("#rainBtn").removeClass('active');
-			$("#pinkBtn").removeClass('active');
-			$("#rain").slideUp(10);
-			$("#pink").slideUp(10);
-			$("#white").slideDown(300);
+			if(whiteNoise.paused){
+				whiteNoise.play();
+				$(this).addClass('active');
+			}
+			else{
+				whiteNoise.pause();
+				$(this).removeClass('active');
+			}
 		});
 		$("#pinkBtn").click(function(){
-			$(this).addClass('active');
-			$("#rainBtn").removeClass('active');
-			$("#whiteBtn").removeClass('active');
-			$("#rain").slideUp(10);
-			$("#white").slideUp(10);
-			$("#pink").slideDown(300);
+			if(pinkNoise.paused){
+				pinkNoise.play();
+				$(this).addClass('active');
+			}
+			else{
+				pinkNoise.pause();
+				$(this).removeClass('active');
+			}
 		});
 		$("#nCage").click(function(){
 			$('body').toggleClass('cageify');
 			if(bees.paused){
 				bees.play();
-				rainAudio.play();
-				whiteNoise.play();
-				pinkNoise.play();
 			}
 			else{
 				bees.pause();
-				rainAudio.pause();
-				whiteNoise.pause();
-				pinkNoise.pause();
 			}
 		});
 
