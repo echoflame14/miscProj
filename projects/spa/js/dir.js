@@ -1,5 +1,21 @@
 angular.module("app").directive("menu", function(){
 	function linkFunc(scope, elem, attrs){
+		var bees = new Audio();
+		bees.src = '../notTheBees.mp3';
+		bees.controls = true;
+		bees.loop = true;
+		var whiteNoise = new Audio();
+		whiteNoise.src = "../white.mp3";
+		whiteNoise.controls = true;
+		whiteNoise.loop = true;
+		var pinkNoise = new Audio();
+		pinkNoise.src = "../pink.mp3";
+		pinkNoise.loop = true;
+		pinkNoise.controls = true;
+		var rainAudio = new Audio();
+		rainAudio.src = "rain-03.mp3";
+		rainAudio.loop = true;
+		rainAudio.controls = true;
 		$("#options").click(function(){
 			$(".optionDisp").slideDown(200);
 			$("#contactCont").slideUp(20);
@@ -46,7 +62,20 @@ angular.module("app").directive("menu", function(){
 		});
 		$("#nCage").click(function(){
 			$('body').toggleClass('cageify');
+			if(bees.paused){
+				bees.play();
+				rainAudio.play();
+				whiteNoise.play();
+				pinkNoise.play();
+			}
+			else{
+				bees.pause();
+				rainAudio.pause();
+				whiteNoise.pause();
+				pinkNoise.pause();
+			}
 		});
+
 	}
 	return{
 		templateUrl: "../views/menu.html",
