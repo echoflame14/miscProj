@@ -125,13 +125,13 @@ html{
 	}
 	#slide-ctrl{
 		height:5vh;
+		margin:0 auto;
 		margin-top:7.5vh;
-
+		max-width:900px;
 		border-top:solid 1px black;
 		border-top-left-radius:1vw;
 		border-top-right-radius:1vw;
 		background-color:$apple-black-opaq-9;
-		box-shadow:10px 10px red;
 
 		line-height:5vh;
 		h1{
@@ -164,13 +164,16 @@ html{
 	}
 	footer{
 		height:22vh;
-
+		max-width:900px;
+		margin:0 auto;
 		background:$apple-gray;
 		#up-down-container{
+			margin:0 auto;
 			font-family: 'Asap', sans-serif;
 			display:none;
 
 			width:100vw;
+			max-width:900px;
 			height:15vh;
 
 			background:$apple-gray;
@@ -290,6 +293,8 @@ html{
 			}
 		}
 		#presets{
+			max-width:900px;
+			margin:0 auto;
 			display:flex;
 			font-family: sans-serif;
 

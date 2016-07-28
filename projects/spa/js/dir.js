@@ -4,11 +4,12 @@ angular.module("app").directive("menu", function(){
 		bees.src = '../notTheBees.mp3';
 		bees.controls = true;
 		bees.loop = true;
+		bees.volume = 0.03
 		var whiteNoise = new Audio();
 		whiteNoise.src = "../white.mp3";
 		whiteNoise.controls = true;
 		whiteNoise.loop = true;
-		whiteNoise.volume = 0.05;
+		whiteNoise.volume = 0.01;
 		var pinkNoise = new Audio();
 		pinkNoise.src = "../pink.mp3";
 		pinkNoise.loop = true;
