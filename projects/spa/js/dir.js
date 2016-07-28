@@ -72,7 +72,7 @@ angular.module("app").directive("menu", function(){
 			}
 		});
 		$("#nCage").click(function(){
-			$('body').toggleClass('cageify');
+			$('#view').toggleClass('cageify');
 			if(bees.paused){
 				bees.play();
 			}
@@ -84,9 +84,11 @@ angular.module("app").directive("menu", function(){
 			rainAudio.pause();
 			whiteNoise.pause();
 			pinkNoise.pause();
+			bees.pause();
 			$("#pinkBtn").removeClass('active');
 			$("#rainBtn").removeClass('active');
 			$("#whiteBtn").removeClass('active');
+			$("#view").removeClass('cageify');
 		});
 
 	}

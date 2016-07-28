@@ -1,6 +1,6 @@
 .cageify {
   background-image: url("https://cdn3.vox-cdn.com/thumbor/IE_0CtHTpjW1ix_Ztb5VHAdBHOE=/assets.sbnation.com/uploads/chorus_asset/file/2317732/nicolasCage_NotTheBees.0.gif");
-  background-size: contain; }
+  background-size: cover; }
 
 .active {
   border-bottom: #970000 0.3vh solid; }
