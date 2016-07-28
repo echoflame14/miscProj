@@ -8,14 +8,17 @@ angular.module("app").directive("menu", function(){
 		whiteNoise.src = "../white.mp3";
 		whiteNoise.controls = true;
 		whiteNoise.loop = true;
+		whiteNoise.volume = 0.05;
 		var pinkNoise = new Audio();
 		pinkNoise.src = "../pink.mp3";
 		pinkNoise.loop = true;
 		pinkNoise.controls = true;
+		pinkNoise.volume = 0.01
 		var rainAudio = new Audio();
 		rainAudio.src = "rain-03.mp3";
 		rainAudio.loop = true;
 		rainAudio.controls = true;
+		rainAudio.volume = 0.01
 		$("#options").click(function(){
 			$(".optionDisp").slideDown(200);
 			$("#contactCont").slideUp(20);
@@ -75,6 +78,14 @@ angular.module("app").directive("menu", function(){
 			else{
 				bees.pause();
 			}
+		});
+		$("#pauseBtn").click(function(){
+			rainAudio.pause();
+			whiteNoise.pause();
+			pinkNoise.pause();
+			$("#pinkBtn").removeClass('active');
+			$("#rainBtn").removeClass('active');
+			$("#whiteBtn").removeClass('active');
 		});
 
 	}

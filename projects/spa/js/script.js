@@ -27,9 +27,3 @@ $("#menuClose").click(function(){
 	$("#menu").animate({'margin-right':'-62vw'},400);
 	$("#hamburger").removeClass("hidden");
 });
-
-var bees = new Audio();
-bees.src = '../notTheBees.mp3';
-bees.controls= true;
-bees.loop = true;
-bees.autoPlay = true;
